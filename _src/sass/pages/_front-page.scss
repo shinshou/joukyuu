@@ -1,0 +1,60 @@
+#main{
+  .kv-wrapper{
+    display: flex;
+    justify-content: center;
+    background-image: url(/asset/fv@2x.png);
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    padding-top: 196px;
+    padding-bottom: 86px;
+
+    .kv-content{
+
+      .kv-copy{
+        font-size: 48px;
+        font-weight: bold;
+        color: #FFF;
+      }
+    
+
+      .kv-copy-sub{
+        font-size: 18px;
+        color: #FFF;
+        text-align: center;
+        line-height: 31px;
+        margin-top: 28px;
+        opacity: 0.8;
+      }
+
+      .cta-btn{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 260px;
+        height: 60px;
+        font-size: 16px;
+        color: #FFF;
+        font-weight: bold;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: $btn-color;
+        border-radius: 31px;
+        margin-top: 51px;
+      }
+
+      .contact-btn{
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        width: 96px;
+        margin-right: auto;
+        margin-left: auto;
+        border-bottom: 1px solid #FFF;
+        margin-top: 22px;
+        opacity: 0.8;
+      }
+    }
+  }
+}

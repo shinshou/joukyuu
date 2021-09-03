@@ -1,0 +1,50 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family:
+    "Yu Gothic",
+    "游ゴシック",
+    YuGothic,
+    "游ゴシック体",
+    "ヒラギノ角ゴ Pro W3",
+    "メイリオ",
+    sans-serif;
+  color: #2b3039;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+section.anchor {
+  display: block;
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
+.section-wrapper{
+  padding: 60px 20px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.section-ttl {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: $main-color;
+  text-align: center;
+}
+
+
