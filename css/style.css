@@ -4,13 +4,14 @@ html {
 }
 
 body {
-  color: #2b3039;
+  color: #1b2224;
   font-size: 1.6rem;
   font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   vertical-align: bottom;
 }
 
@@ -30,8 +31,10 @@ section.anchor {
 
 .section-wrapper {
   max-width: 940px;
-  margin: 0 auto;
-  padding: 60px 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .section-ttl {
@@ -54,17 +57,20 @@ section.anchor {
 
 #header .header-inner {
   display: flex;
+  align-items: center;
   width: 100%;
 }
 
 #header .header-inner h1 {
+  display: flex;
+  align-items: flex-end;
+  width: 136px;
+  height: 27px;
   margin-right: 28px;
 }
 
 #header .header-inner h1 > img {
   -o-object-fit: cover;
-  width: 136px;
-  height: 27px;
      object-fit: cover;
 }
 
@@ -144,15 +150,20 @@ section.anchor {
 }
 
 #main .kv-wrapper {
-  -o-object-fit: cover;
+  -o-object-fit: contain;
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: auto;
   padding-top: 196px;
   padding-bottom: 86px;
-     object-fit: cover;
+     object-fit: contain;
   background-image: url(/asset/fv@2x.png);
+}
+
+#main .kv-wrapper .kv-content {
+  max-width: 100%;
+  height: auto;
 }
 
 #main .kv-wrapper .kv-content .kv-copy {

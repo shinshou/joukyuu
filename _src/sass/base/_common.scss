@@ -12,11 +12,12 @@ body {
     "ヒラギノ角ゴ Pro W3",
     "メイリオ",
     sans-serif;
-  color: #2b3039;
+  color: #1b2224;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height:auto;
   vertical-align: bottom;
 }
 
@@ -35,9 +36,11 @@ section.anchor {
 }
 
 .section-wrapper{
-  padding: 60px 20px;
   max-width: 940px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .section-ttl {

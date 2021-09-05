@@ -11,14 +11,17 @@
   .header-inner{
     width: 100%;
     display: flex;
+    align-items: center;
 
     h1{
       margin-right: 28px;
+      width: 136px;
+      height: 27px;
+      display: flex;
+      align-items: flex-end;
     }
 
     h1>img{
-      width: 136px;
-      height: 27px;
       object-fit: cover;
     }
 
