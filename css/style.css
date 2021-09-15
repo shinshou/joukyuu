@@ -356,6 +356,7 @@ section.anchor {
 }
 
 #main #section-jirei {
+  margin-top: 39px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #1b224c;
@@ -423,6 +424,96 @@ section.anchor {
   padding-left: 10px;
   background-color: #FFF;
   color: #1b224c;
+}
+
+#main #section-flow {
+  padding-top: 58px;
+  padding-bottom: 75px;
+}
+
+#main #section-flow .section-inner-flow .section-ttl {
+  margin-bottom: 53px;
+  text-align: center;
+}
+
+#main #section-flow .section-inner-flow .flow-table .table-row {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+#main #section-flow .section-inner-flow .flow-table .table-row .table-item-no {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background-color: #f5a623;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+#main #section-flow .section-inner-flow .flow-table .table-row .table-item-ttl {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 214.5px;
+  height: 64px;
+  padding-left: 21px;
+  background-color: #f8f8f8;
+  color: #1b224c;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+#main #section-flow .section-inner-flow .flow-table .table-row .table-item-ttl::after {
+  position: absolute;
+  left: 100%;
+  width: 2px;
+  height: 29px;
+  background-color: #C3C3C3;
+  content: "";
+}
+
+#main #section-flow .section-inner-flow .flow-table .table-row .table-item-text {
+  display: flex;
+  align-items: center;
+  width: 620.5px;
+  height: 64px;
+  padding-left: 53.5px;
+  background-color: #f8f8f8;
+  color: #1b224c;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+#main #section-question .section-inner-question .section-ttl {
+  text-align: center;
+}
+
+#main #section-question .section-inner-question .question-item {
+  margin-top: 32.5px;
+}
+
+#main #section-question .section-inner-question .question-item dt {
+  display: flex;
+  align-items: center;
+  height: 74px;
+  border-top: #1b224c solid 2px;
+  color: #1b224c;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+#main #section-question .section-inner-question .question-item dd {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  padding-left: 25.5px;
+  border-bottom: #1b224c solid 2px;
+  background-color: #f8f8f8;
+  color: #1b224c;
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
