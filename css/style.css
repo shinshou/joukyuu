@@ -539,6 +539,7 @@ section.anchor {
 
 #main .section-2col {
   display: flex;
+  justify-content: space-between;
   margin-top: 90px;
 }
 
@@ -564,6 +565,8 @@ section.anchor {
 
 #main #section-blog .blog-item .blog-item-img .blog-item-content {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: 20px;
 }
 
@@ -579,6 +582,99 @@ section.anchor {
   color: #1b224c;
   font-size: 12px;
   vertical-align: bottom;
+}
+
+#main #section-news {
+  width: 45%;
+}
+
+#main #section-news .news-item {
+  margin-top: 30px;
+}
+
+#main #section-news .news-item .news-item-inner {
+  width: 402px;
+  height: 87px;
+}
+
+#main #section-news .news-item .news-item-inner .news-item-date {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+#main #section-news .news-item .news-item-inner .news-item-text {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+#main #section-contact {
+  margin-top: 119px;
+}
+
+#main #section-contact .section-inner-contact .contact-inner-form {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  padding-top: 70px;
+  padding-bottom: 41px;
+  background-image: url(/asset/cta@2x.png);
+  background-size: cover;
+}
+
+#main #section-contact .section-inner-contact .contact-inner-form .section-ttl {
+  color: #fff;
+  text-align: center;
+}
+
+#main #section-contact .section-inner-contact .contact-inner-tel {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 80px;
+  padding-right: 100px;
+  color: #1b224c;
+}
+
+#main #section-contact .section-inner-contact .contact-inner-tel .contact-tel-text {
+  width: 240px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+#main #section-contact .section-inner-contact .contact-inner-tel .contact-tel-num {
+  width: 268px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 1.4;
+}
+
+#main #section-contact .section-inner-contact .contact-inner-tel .contact-tel-date {
+  width: 132px;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+#footer {
+  height: 229px;
+  background-color: #1b224c;
+}
+
+#footer .footer-inner {
+  display: flex;
+  color: #fff;
+}
+
+#footer .footer-inner .footer-list-item {
+  display: flex;
+}
+
+#footer .footer-inner .footer-img {
+  width: 197px;
+  height: 58px;
+  background-color: #FFF;
 }
 
 /*# sourceMappingURL=style.css.map */
