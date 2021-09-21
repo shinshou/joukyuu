@@ -496,7 +496,7 @@ section.anchor {
   margin-top: 32.5px;
 }
 
-#main #section-question .section-inner-question .question-item dt {
+#main #section-question .section-inner-question .question-item .question-item-ttl {
   display: flex;
   position: relative;
   align-items: center;
@@ -505,9 +505,10 @@ section.anchor {
   color: #1b224c;
   font-weight: normal;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 
-#main #section-question .section-inner-question .question-item dt::before {
+#main #section-question .section-inner-question .question-item .question-item-ttl::before, #main #section-question .section-inner-question .question-item .question-item-ttl::after {
   position: absolute;
   left: 90%;
   width: 25px;
@@ -516,18 +517,12 @@ section.anchor {
   content: "";
 }
 
-#main #section-question .section-inner-question .question-item dt::after {
-  position: absolute;
-  left: 90%;
-  width: 3px;
-  height: 25px;
-  margin-left: 11px;
-  background-color: #1b224c;
-  content: "";
+#main #section-question .section-inner-question .question-item .question-item-ttl::before {
+  transform: rotate(-90deg);
 }
 
-#main #section-question .section-inner-question .question-item dd {
-  display: flex;
+#main #section-question .section-inner-question .question-item .question-item-text {
+  display: none;
   align-items: center;
   height: 65px;
   margin-bottom: 16px;
@@ -628,21 +623,26 @@ section.anchor {
 
 #main #section-contact .section-inner-contact .contact-inner-tel {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   height: 80px;
   padding-right: 100px;
   color: #1b224c;
 }
 
-#main #section-contact .section-inner-contact .contact-inner-tel .contact-tel-text {
+#main #section-contact .section-inner-contact .contact-inner-tel .inner-content {
+  display: flex;
+  align-items: flex-end;
+}
+
+#main #section-contact .section-inner-contact .contact-inner-tel .inner-content .contact-tel-text {
   width: 240px;
   font-weight: bold;
   font-size: 1.6rem;
   line-height: 1.7;
 }
 
-#main #section-contact .section-inner-contact .contact-inner-tel .contact-tel-num {
+#main #section-contact .section-inner-contact .contact-inner-tel .inner-content .contact-tel-num {
   width: 268px;
   margin-right: 20px;
   margin-left: 20px;
@@ -651,30 +651,83 @@ section.anchor {
   line-height: 1.4;
 }
 
-#main #section-contact .section-inner-contact .contact-inner-tel .contact-tel-date {
+#main #section-contact .section-inner-contact .contact-inner-tel .inner-content .contact-tel-date {
   width: 132px;
   font-size: 1.6rem;
   line-height: 1.7;
 }
 
 #footer {
-  height: 229px;
   background-color: #1b224c;
 }
 
 #footer .footer-inner {
   display: flex;
+  justify-content: space-between;
   color: #fff;
 }
 
 #footer .footer-inner .footer-list-item {
   display: flex;
+  margin-top: 50px;
+  margin-bottom: 160px;
+  margin-left: 180px;
+  font-size: 1.6rem;
 }
 
-#footer .footer-inner .footer-img {
+#footer .footer-inner .footer-list-item .list-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 111px;
+  height: 23px;
+}
+
+#footer .footer-inner .footer-list-item .list-text:nth-child(2) {
+  border-right: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+}
+
+#footer .footer-inner .footer-list-item .list-text:nth-child(3) {
+  border-right: 1px solid #FFF;
+}
+
+#footer .footer-inner .footer-content {
+  margin-top: 35px;
+  margin-right: 172px;
+}
+
+#footer .footer-inner .footer-content .footer-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 197px;
   height: 58px;
   background-color: #FFF;
+}
+
+#footer .footer-inner .footer-content .footer-img img {
+  width: 159px;
+  height: 31px;
+}
+
+#footer .footer-inner .footer-content .footer-content-inner p:nth-child(1) {
+  display: flex;
+  justify-content: right;
+  margin-top: 28px;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+#footer .footer-inner .footer-content .footer-content-inner p:nth-child(1) i {
+  margin-right: 7px;
+}
+
+#footer .footer-inner .footer-content .footer-content-inner p:nth-child(2) {
+  display: flex;
+  justify-content: right;
+  margin-top: 13px;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

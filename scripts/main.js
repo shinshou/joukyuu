@@ -153,7 +153,28 @@ $(function () {
 
 });
 
+//アコーディオンメニュー作成
+$(document).ready(function () {
+    $('.question-item1').on('click', function () {
+        $('.item1-text').slideToggle();
+        $('.item1-text').css('display', 'flex');
+    });
 
+    $('.question-item2').on('click', function () {
+        $('.item2-text').slideToggle();
+        $('.item2-text').css('display', 'flex');
+    });
+
+    $('.question-item3').on('click', function () {
+        $('.item3-text').slideToggle();
+        $('.item3-text').css('display', 'flex');
+    });
+
+    $('.question-item4').on('click', function () {
+        $('.item4-text').slideToggle();
+        $('.item4-text').css('display', 'flex');
+    });
+});
 
 
 
