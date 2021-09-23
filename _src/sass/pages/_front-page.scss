@@ -348,10 +348,6 @@
           position: relative;
           cursor: pointer;
 
-          span{
-
-          }
-
           &::before,&::after{
             position: absolute;
             content:"";
@@ -363,7 +359,13 @@
 
           &::before{
             transform: rotate(-90deg);
+            transition: 1s;
           }
+        }
+
+        .active::before {
+          transform: rotate(0deg);
+          transition: 1s;
         }
 
         .question-item-text{

@@ -43,6 +43,32 @@ section.anchor {
   font-size: 3.6rem;
 }
 
+.bread-list {
+  margin-top: 36px;
+}
+
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: inline;
+  font-weight: bold;
+  list-style: none;
+}
+
+.breadcrumb li:after {
+  padding: 0 0.2em;
+  content: ">";
+  color: #555;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
 .cta-btn {
   display: flex;
   align-items: center;
@@ -519,6 +545,12 @@ section.anchor {
 
 #main #section-question .section-inner-question .question-item .question-item-ttl::before {
   transform: rotate(-90deg);
+  transition: 1s;
+}
+
+#main #section-question .section-inner-question .question-item .active::before {
+  transform: rotate(0deg);
+  transition: 1s;
 }
 
 #main #section-question .section-inner-question .question-item .question-item-text {
