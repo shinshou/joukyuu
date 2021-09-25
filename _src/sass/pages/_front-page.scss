@@ -378,6 +378,10 @@
           padding-left: 25.5px;
           margin-bottom: 16px;
         }
+
+        &:last-child{
+          border-bottom: $main-color solid 2px;
+        }
       }
     }
   }

@@ -568,6 +568,10 @@ section.anchor {
   font-size: 1.6rem;
 }
 
+#main #section-question .section-inner-question .question-item:last-child {
+  border-bottom: #1b224c solid 2px;
+}
+
 #main .section-2col {
   display: flex;
   justify-content: space-between;
@@ -786,6 +790,14 @@ section.anchor {
   background-image: url(/asset/plan@2x.png);
 }
 
+.ul-blog {
+  background-image: url(/asset/blog@2x.png);
+}
+
+.ul-news {
+  background-image: url(/asset/news@2x.png);
+}
+
 #section-ul {
   margin-top: 60px;
 }
@@ -838,6 +850,92 @@ section.anchor {
   color: #1b224c;
   font-size: 1.6rem;
   line-height: 1.6;
+}
+
+#section-ul .section-inner-ul-blog {
+  margin-top: 60px;
+}
+
+#section-ul .section-inner-ul-blog .blog-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+#section-ul .section-inner-ul-blog .blog-inner .blog-img img {
+  -o-object-fit: cover;
+  position: relative;
+  width: 240px;
+  height: 148px;
+     object-fit: cover;
+}
+
+#section-ul .section-inner-ul-blog .blog-inner .blog-img .blog-category {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 28px;
+  background-color: #1b224c;
+  color: #fff;
+  font-size: 12px;
+}
+
+#section-ul .section-inner-ul-blog .blog-inner .blog-content {
+  width: 610px;
+  margin-left: 50px;
+  color: #1b224c;
+}
+
+#section-ul .section-inner-ul-blog .blog-inner .blog-content .blog-date {
+  font-size: 1.6rem;
+}
+
+#section-ul .section-inner-ul-blog .blog-inner .blog-content .blog-ttl {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 2.6rem;
+  text-decoration: underline;
+}
+
+#section-ul .section-inner-ul-blog .blog-inner .blog-content .blog-text {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+#section-ul .section-inner-ul-news {
+  margin-top: 45px;
+}
+
+#section-ul .section-inner-ul-news .news-inner {
+  border-top: 3px solid #f8f8f8;
+}
+
+#section-ul .section-inner-ul-news .news-inner .news-content {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  color: #1b224c;
+}
+
+#section-ul .section-inner-ul-news .news-inner .news-content .news-date {
+  font-size: 1.6rem;
+}
+
+#section-ul .section-inner-ul-news .news-inner .news-content .news-text {
+  width: 735px;
+  margin-left: 51px;
+  overflow: hidden;
+  font-size: 1.6rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#section-ul .section-inner-ul-news .news-inner:last-child {
+  border-bottom: 3px solid #f8f8f8;
 }
 
 #section-ul-content .section-ttl {
