@@ -1,0 +1,40 @@
+.cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 60px;
+  font-size: 1.6rem;
+  color: #FFF;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $btn-color;
+  border-radius: 31px;
+  margin-top: 51px;
+}
+
+.contact-btn {
+  display: block;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  width: 96px;
+  margin-right: auto;
+  margin-left: auto;
+  border-bottom: 1px solid #FFF;
+  margin-top: 22px;
+  opacity: 0.8;
+}
+
+.cta-btn2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  border:2px solid #FFF;
+  font-size: 1.6rem;
+  color: #FFF;
+}

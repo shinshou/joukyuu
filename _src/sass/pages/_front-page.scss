@@ -599,5 +599,16 @@
       }
     }
   }
+
+  .footer-copylight{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #FFF;
+    padding-right: 172px;
+  }
 }
  //-----footer//@at-root

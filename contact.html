@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>お問い合わせ - Engress</title>
+    <meta name="title" content="Engress">
+    <meta name="description" content="日本人へのTOEFL指導歴豊かな講師陣のコーチング型TOEFLスクール">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Engress">
+    <meta property="og:description" content="日本人へのTOEFL指導歴豊かな講師陣のコーチング型TOEFLスクール">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Engress">
+    <meta property="twitter:description" content="日本人へのTOEFL指導歴豊かな講師陣のコーチング型TOEFLスクール">
+    <meta property="twitter:image" content="">
+
+    <!-- アイコン読み込み -->
+    <link rel="icon" href="img/icon.png">
+    <link rel="apple-touch-icon" sizes="180×180" href="img/icon.png">
+
+    <!-- グーグルフォント読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet">
+
+    <!-- bootstrap読み込み
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+
+    <!-- fontawesome読み込み -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- flatpicker読み込み -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Aos.js読み込み -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- css読み込み -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+
+  <body>
+    <!-- header -->
+    <header id="header">
+      <div class="header-inner">
+        <h1 class="site-ttl">
+          <a href="/index.html"><img src="./asset/logo (2)@2x.png" alt="サイトロゴ"></a>
+        </h1><!-- /.site-ttl -->
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item-mb"><a href="/index.html">ホーム</a></li>
+            <li class="nav-item"><a href="/news.html">お知らせ</a></li>
+            <li class="nav-item"><a href="/blog.html">ブログ</a></li>
+            <li class="nav-item"><a href="/price-list.html">コース・料金</a></li>
+          </ul><!-- /.nav-list -->
+          <ul class="nav-list-r">
+            <li class="nav-item">
+              <p>平日08:00〜20:00</p>
+              <p><i class="fas fa-phone-alt"></i>0123-456-7890</p>
+            </li>
+            <li class="nav-item">
+              <a href="">資料請求</a>
+            </li>
+            <li class="nav-item contact">
+              <a href="/contact.html">お問い合わせ</a>
+            </li>
+          </ul><!-- /.nav-list-r -->
+        </nav><!-- /.header-nav -->
+      </div><!-- /.header-inner -->
+    </header>
+    <!-- //header -->
+
+    <!-- main -->
+    <main id="main">
+      <!-- key-visual -->
+      <div class="kv-ul-wrapper ul-contact">
+        <div class="kv-ul-content">
+          <p class="kv-ul-copy">お問い合わせ・資料請求</p><!-- /.kv-ul-copy -->
+        </div><!-- /.kv-ul-content -->
+      </div><!-- /.kv-ul-wrapper -->
+      <!-- //key-visual -->
+      
+      <section class="bread-list">
+        <div class="section-wrapper">
+          <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="index.html">
+                  <span itemprop="name" class="bread-home">ホーム</span>
+              </a>
+              <meta itemprop="position" content="1" />
+            </li>
+
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="/contact.html">
+                  <span itemprop="name">お問い合わせ</span>
+              </a>
+              <meta itemprop="position" content="2" />
+            </li>
+          </ol>
+        </div><!-- /.section-wrapper -->
+      </section><!-- /.bread-list -->
+
+      <!-- section-ul -->
+      <section id="section-ul">
+        <div class="section-wrapper-contact">
+          <p class="section-subtext">弊社に興味を持って頂きありがとうございます。商談やサービスのご利用、資料請求について下記のフォームよりお問い合わせください。</p><!-- /.section-subtext -->
+          <div class="section-inner section-inner-ul-contact">
+            <div class="contact-inner">
+              <form action="mail.php" id="form" method="POST">
+              <dl>
+                <dt><label for="companyname">会社名</label></dt>
+                <dd><input id="companyname" type="text" name="companyname" placeholder="Engress" required></dd>
+
+                <dt><label for="name" class="required">氏名</label></dt>
+                <dd><input id="name" type="text" name="name" placeholder="田中 太郎" required></dd>
+            
+                <dt><label for="email" class="required">メールアドレス</label></dt>
+                <dd><input id="email" type="text" name="email" placeholder="example@example.jp" required></dd>
+
+                <dt><label for="tel" class="required">電話番号</label></dt>
+                <dd><input id="tel" type="text" name="tel" placeholder="例）01-2345-6789" required></dd>
+
+                <dt>お問い合わせの種類を選択してください<span>（資料請求の方は資料請求を選択ください）</span></dt>
+                <dd class="radio"><input id="select-opportunity" type="radio" name="consultation" value="select-consultation"><label for="select-opportunity" class="">商談のご相談</label></dd>
+                <dd class="radio"><input id="select-service" type="radio" name="consultation" value="select-service"><label for="select-service" class="">サービスに関するお問い合わせ</label></dd>
+                <dd class="radio"><input id="select-document" type="radio" name="consultation" value="select-document"><label for="select-document" class="">資料請求</label></dd>
+                <dd class="radio"><input id="select-etc" type="radio" name="consultation" value="select-etc"><label for="select-etc" class="">その他</label></dd>
+
+                <dt class="message"><label for="message" class="required">お問い合わせ内容</label></dt>
+                <dd><textarea id="message" name="message" placeholder="お問い合わせ内容をご入力ください"  required></textarea></dd>
+
+                <dt class="privacy-policy"><a href="">プライバシーポリシー</a>に同意の上、送信ください。</dt>
+                <dd class="privacy-policy"><input type="checkbox" name="checkbox" id="checkbox" value="1" required><label for="checkbox" class="required">プライバシーポリシーに同意する</label></dd>
+              </dl>
+
+              <div class="contact-btn-wrapper"><button class="contact-btn" type="submit">送信する</button></div>
+            </form>
+            </div><!-- /.contact-inner -->
+          </div><!-- /.section-inner -->
+        </div><!-- /.section-wrapper -->
+      </section><!-- /#section-ul -->
+      <!-- //section-ul -->
+      
+      <section id="section-contact">
+        <div class="section-wrapper">
+          <div class="section-inner section-inner-contact">
+            <div class="contact-inner-form">
+              <h2 class="section-ttl">まずは無料で資料請求から</h2><!-- /.section-ttl -->
+              <a href="/contact.html" class="cta-btn">資料請求</a><!-- /.cta-btn -->
+              <a href="/contact.html" class="contact-btn">お問い合わせ</a><!-- /.contact-btn -->
+            </div>
+            <div class="contact-inner-tel">
+              <div class="inner-content">
+                <p class="contact-tel-text">お電話でのお問い合わせはこちら</p><!-- /.contact-tel-text -->
+                <p class="contact-tel-num">0123-456-7890</p><!-- /.contact-tel-num -->
+                <p class="contact-tel-date">平日 08:00~20:00</p><!-- /.contact-tel-date -->
+              </div><!-- /.inner-content -->
+            </div><!-- /.contact-inner-tel -->
+          </div><!-- /.section-inner section-inner-contact -->
+        </div><!-- /.section-wrapper -->
+      </section><!-- /#section-contact -->
+      <!-- //section-contact -->
+    </main> 
+    <!-- //main -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <div class="footer-list">
+          <ul class="footer-list-item">
+            <li class="list-text"><a href="/index.html">ホーム</a></li><!-- /.list-text -->
+            <li class="list-text"><a href="/news.html">お知らせ</a></li><!-- /.list-text -->
+            <li class="list-text"><a href="/blog.html">ブログ</a></li><!-- /.list-text -->
+            <li class="list-text"><a href="/price-list.html">コース・料金</a></li><!-- /.list-text -->
+          </ul><!-- /.footer-list-item -->
+        </div><!-- /.footer-list -->
+        <div class="footer-content">
+          <div class="footer-img">
+            <img src="./asset/logo (2)@2x.png" alt="フッターロゴ">
+          </div><!-- /.footer-img -->
+          <div class="footer-content-inner">
+            <p><i class="fas fa-phone-alt"></i>0123-456-7890</p>
+            <p>平日08:00~20:00</p>
+          </div><!-- /.footer-content-inner -->
+        </div><!-- /.footer-content -->
+      </div><!-- /.footer-inner -->
+      <div class="footer-copylight">
+        <p>© 2020 Engress.</p>
+      </div><!-- /.footer-copylight -->
+    </footer>
+    <!-- //footer -->
+  
+    <!-- Bootstrapの読み込み -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
+
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- ページ内スムーススクロール-->
+    <script type="text/javascript">
+      $(function(){
+          $('a[href^="#"]').click(function(){
+              var speed = 1000;
+              var href= $(this).attr("href");
+              var target = $(href == "#" || href == "" ? 'html' : href);
+              var position = target.offset().top;
+              $("html, body").animate({scrollTop:position}, speed, "swing");
+              return false;
+          });
+      });
+    </script>
+
+    <!-- <script src="scripts/file.js"></script> -->
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

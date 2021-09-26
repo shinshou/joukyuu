@@ -1,0 +1,29 @@
+.bread-list{
+  height: 50px;
+  background-color: $table-color;
+}
+
+.breadcrumb{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 50px;
+
+  li{
+    list-style: none;
+
+    .bread-home{
+      text-decoration: underline;
+    }
+
+    &:after{
+      content:">";
+      padding: 0 0.2em;
+      color:$main-color;
+    }
+
+    &:last-child:after{
+      content:'';
+    }
+  }
+}

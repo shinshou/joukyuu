@@ -1,0 +1,424 @@
+//-----key-visual
+.kv-ul-wrapper {
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  .kv-ul-content {
+
+    .kv-ul-copy {
+      font-size: 3.2rem;
+      font-weight: bold;
+      color: #FFF;
+    }
+  }
+}
+
+.ul-price{
+  background-image: url(/asset/plan@2x.png);
+}
+
+.ul-blog{
+  background-image: url(/asset/blog@2x.png);
+}
+
+.ul-news {
+  background-image: url(/asset/news@2x.png);
+}
+
+.ul-contact {
+  background-image: url(/asset/cta@2x.png);
+}
+//-----key-visual//@at-root
+
+//-----section-ul
+#section-ul{
+  margin-top: 60px;
+
+  .section-ttl{
+    text-align: center;
+  }
+
+  //-----下層ページ（料金表）
+  .section-inner-ul-price{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    .price-const{
+      width: 280px;
+      height: 90px;
+      background-color: $main-color;
+      color: #fff;
+      font-size: 2.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .plus-label{
+      width: 30px;
+      margin-right: 35px;
+      margin-left: 35px;
+      position: relative;
+
+      &::before,&::after{
+        position: absolute;
+        top: 50%;
+        display: block;
+        content:"";
+        width: 25px;
+        height: 3px;
+        background-color: $main-color;
+      }
+
+      &::after{
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .ul-price-sub{
+    margin-top: 45px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: $main-color;
+  }
+  //-----下層ページ（料金表）//@at-root
+
+  //-----下層ページ（ブログ）
+  .section-inner-ul-blog{
+    margin-top: 60px;
+
+    .blog-inner{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 90px;
+
+      .blog-img{
+
+        img{
+          position: relative;
+          width: 240px;
+          height: 148px;
+          object-fit: cover;
+        }
+
+        .blog-category{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+          color: #fff;
+          background-color:$main-color;
+          width: 80px;
+          height: 28px;
+          position:absolute;
+          z-index: 2;
+        }
+      }
+
+      .blog-content{
+        margin-left: 50px;
+        width: 610px;
+        color:$main-color;
+
+        .blog-date{
+          font-size: 1.6rem;
+        }
+
+        .blog-ttl{
+          font-size: 2.6rem;
+          font-weight: bold;
+          text-decoration: underline;
+          margin-top: 20px;
+        }
+
+        .blog-text{
+          font-size: 1.6rem;
+          line-height: 1.5;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  //-----下層ページ（ブログ）//@at-root
+
+  //-----下層ページ（最新News）
+  .section-inner-ul-news{
+    margin-top: 45px;
+
+    .news-inner{
+      border-top: 3px solid $table-color;
+
+      .news-content{
+        display: flex;
+        align-items: center;
+        height: 64px;
+        color: $main-color;
+
+        .news-date{
+          font-size: 1.6rem;
+        }
+
+        .news-text{
+          margin-left: 51px;
+          font-size: 1.6rem;
+          width: 735px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      &:last-child{
+        border-bottom: 3px solid $table-color;
+      }
+    }
+  }
+  //-----下層ページ（最新News）//@at-root
+
+  //-----下層ページ（お問い合わせ）
+  .section-subtext{
+    font-size: 1.6rem;
+    color:$main-color;
+    line-height: 1.7;
+  }
+
+  .section-subtext-thanks {
+    font-size: 1.6rem;
+    color: $main-color;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .home-link{
+    font-size: 1.6rem;
+    color: $main-color;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 83px;
+    margin-bottom: 80px;
+  }
+
+  .section-inner-ul-contact{
+    margin-top: 41px;
+
+    .contact-inner{
+      font-size: 1.6rem;
+      color:$main-color;
+
+      dt{
+        font-weight: normal;
+
+        span{
+          font-weight: bold;
+        }
+      }
+
+      dd{
+
+        input[type = "text"]{
+          height: 50px;
+          width: 100%;
+          margin-top: 12px;
+          margin-bottom: 20px;
+          border:0.5px solid $main-color;
+          height: 50px;
+          display:flex;
+          align-items: center;
+          padding: 0 20px;
+        }
+        
+        input[type = "radio"],
+        input[type = "checkbox"]{
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .radio{
+        margin-top: 20px;
+
+        label{
+          margin-left: 20px;
+        }
+      }
+
+      .message{
+        margin-top: 24px;
+        margin-bottom: 12px;
+      }
+
+      textarea{
+        width: 100%;
+        height: 240px;
+        border:0.5px solid $main-color;
+        padding: 20px 20px;
+        resize: none;
+      }
+
+      .privacy-policy{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a{
+          color:$btn-color;
+          text-decoration: underline;
+        }
+
+        label{
+          margin-left: 15px;
+        }
+      }
+
+      .contact-btn{
+        width: 200px;
+        height: 50px;
+        background-color:$main-color;
+        color: #fff;
+        font-weight: bold;
+        margin-top: 48px;
+        border-radius: 5px;
+      }
+    }
+  }
+  //-----下層ページ（お問い合わせ）//@at-root
+}
+//-----section-ul//@at-root
+
+//-----下層ページ（料金表）
+//-----section-ul-content
+#section-ul-content{
+
+  .section-ttl{
+    margin-top: 90px;
+    text-align: center;
+  }
+
+  .section-inner-ul-pricelist{
+    margin-top: 106px;
+    display: flex;
+    justify-content: space-between;
+
+    .price-list-content{
+      width: 220px;
+      height: 470px;
+      border:1px solid $main-color;
+      cursor: pointer;
+
+      &:hover{
+        transition: 0.5s;
+        transform: translateY(-20px);
+        border:1px solid $btn-color;
+
+        .price-list-ttl{
+          height: 80px;
+          background-color: $btn-color;
+          transition: 0.5s;
+          line-height: 2.5;
+        }
+
+        .price-list-inner {
+          margin-top: 20px;
+          transition: 0.5s;
+
+          .price {
+            color: $btn-color;
+            transition: 0.5s;
+          }
+        }
+      }
+
+      .price-list-ttl{
+        height: 60px;
+        font-size: 1.6rem;
+        background-color: $main-color;
+        color: #fff;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .price-list-inner{
+        margin-top: 30px;
+        
+        .price{
+          font-size: 2.2rem;
+          font-weight: bold;
+          color: $main-color;
+          text-align: center;
+        }
+
+        .price-sub{
+          margin-top: 14px;
+          margin-bottom: 48px;
+          font-size: 1.6rem;
+          color: $main-color;
+          text-align: center;
+        }
+
+        p{
+          text-align: center;
+          font-size: 1.6rem;
+          color: $main-color;
+        }
+
+        ul{
+
+          li{
+            width: 146px;
+            margin-bottom: 23px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 1.6rem;
+            color: $main-color;
+            position: relative;
+            text-align: center;
+
+
+            &::before,&::after{
+              position: absolute;
+              display: block;
+              content:"";
+              background-color: $main-color;
+            }
+
+            &::before{
+              top: 30%;
+              left: -8%;
+              width: 3px;
+              height: 8px;
+              transform: rotate(-45deg);
+            }
+
+            &::after{
+              top: 20%;
+              left: -5%;
+              width: 3px;
+              height: 10px;
+              transform: rotate(45deg);
+            }
+          }
+
+          li:nth-child(4){
+
+            &::before{
+              top: 25%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//-----下層ページ（料金表）//@at-root
