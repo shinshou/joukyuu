@@ -1,0 +1,29 @@
+$mb:767px; //スマホ
+$tb:768px; //タブレット
+$lt:1024px; //ラップトップ
+$pc:1439px; //PC
+
+//@mediaのフォーマット
+@mixin mobile {
+  @media (max-width:$mb) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width:$tb) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width:$lt) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width:$pc) {
+    @content;
+  }
+}

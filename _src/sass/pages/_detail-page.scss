@@ -1,0 +1,443 @@
+//-----最新News一覧ページ
+#section-detail-news{
+
+  .section-detail-news-ttl{
+    font-size: 2.8rem;
+    line-height: 1.7;
+    color: $main-color;
+    font-weight: bold;
+    margin-top: 60px;
+  }
+
+  .news-date{
+    font-size: 1.6rem;
+    color: $main-color;
+    text-align: right;
+    margin-top: 36px;
+  }
+
+  .section-inner-detail-news{
+
+    h2{
+      font-size: 2.6rem;
+      color: $main-color;
+      font-weight: bold;
+      margin-top: 60px;
+    }
+
+    .detail-news-text{
+      font-size: 1.6rem;
+      color: $main-color;
+      line-height: 1.5;
+      margin-top: 30px;
+    }
+
+    h3{
+      font-size: 2.2rem;
+      color: $main-color;
+      font-weight: bold;
+      margin-top: 33px;
+      display: flex;
+      align-items: center;
+
+      &::before{
+        content:"";
+        height: 28px;
+        width: 4px;
+        background-color: $main-color;
+        margin-right: 10px;
+      }
+    }
+
+    .quote-inner{
+      height: 104px;
+      background-color: $table-color;
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+
+      .quote-logo{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 22.5px;
+        height: 45px;
+
+        &:nth-child(2){
+          margin-right: 11px;
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          background-color: #b4b4b4;
+          width: 10px;
+          height: 10px;
+        }
+
+        &::after {
+          position: absolute;
+          top: 10%;
+          left: 15%;
+          content: "";
+          background-color: #b4b4b4;
+          width: 5px;
+          height: 15px;
+          transform: rotate(20deg);
+        }
+      }
+
+      .quote-text{
+        font-size: 1.6rem;
+        color: $main-color;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .news-detail-img{
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+      margin-top: 30px;
+    }
+  }
+}
+//-----最新News一覧ページ//@at-root
+
+//-----ブログ詳細ページ
+#section-detail-blog{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+  .section-detail-blog-category{
+    width: 110px;
+    height: 31px;
+    font-size: 12px;
+    background-color: $main-color;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-detail-blog-ttl{
+    font-size: 2.8rem;
+    color: $main-color;
+    line-height: 1.5;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+
+  .blog-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    .sns-link-inner{
+      display: flex;
+
+      .sns-link1,.sns-link2,.sns-link3{
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        font-size: 12px;
+        border-radius: 3px;
+        }
+
+        .sns-link1{
+          width: 69px;
+          background-color: #305097;
+        }
+
+        .sns-link2{
+          margin-left: 4px;
+          width: 44px;
+          background-color: #305097;
+        }
+
+        .sns-link3{
+          margin-left: 4px;
+          width: 69px;
+          background-color: #00ACED;
+        }
+    }
+
+    .blog-date{
+      font-size: 1.6rem;
+      color: $main-color;
+    }
+  }
+
+  .section-inner-detail-blog{
+    margin-top: 22px;
+
+    .blog-eyecatch{
+      width: 100%;
+      height: 370px;
+      object-fit: cover;
+    }
+
+    h2{
+      font-size: 2.6rem;
+      color: $main-color;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+
+    .detail-blog-text{
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: $main-color;
+      margin-top: 30px;
+    }
+
+    h3 {
+      font-size: 2.2rem;
+      color: $main-color;
+      font-weight: bold;
+      margin-top: 33px;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        height: 28px;
+        width: 4px;
+        background-color: $main-color;
+        margin-right: 10px;
+      }
+    }
+
+    .quote-inner {
+      height: 104px;
+      background-color: $table-color;
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+
+      .quote-logo {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 30px;
+        height: 45px;
+
+        &:nth-child(2) {
+          margin-right: 11px;
+        }
+
+        &::before {
+          position: absolute;
+          content: "";
+          background-color: #b4b4b4;
+          width: 10px;
+          height: 10px;
+        }
+
+        &::after {
+          position: absolute;
+          top: 10%;
+          left: 15%;
+          content: "";
+          background-color: #b4b4b4;
+          width: 5px;
+          height: 15px;
+          transform: rotate(20deg);
+        }
+      }
+
+      .quote-text {
+        font-size: 1.6rem;
+        color: $main-color;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .blog-detail-img{
+      margin-top: 30px;
+      width: 100%;
+      height: 335px;
+      object-fit: cover;
+    }
+
+    .recommend-article{
+      margin-top: 60px;
+    }
+
+    .blog-inner {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      .blog-img {
+
+        img {
+          position: relative;
+          width: 210px;
+          height: 128px;
+          object-fit: cover;
+        }
+
+        .blog-category {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+          color: #fff;
+          background-color: $main-color;
+          width: 80px;
+          height: 28px;
+          position: absolute;
+          z-index: 2;
+        }
+      }
+
+      .blog-content {
+        margin-left: 32px;
+        width: 348px;
+        color: $main-color;
+
+        .blog-date {
+          font-size: 1.6rem;
+        }
+
+        .blog-ttl {
+          font-size: 1.8rem;
+          font-weight: bold;
+          text-decoration: underline;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  .related-article{
+
+    .related-article-text{
+      width: 270px;
+      height: 63px;
+      background-color: $main-color;
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.1rem;
+      font-weight: bold;
+    }
+
+    .related-article-inner{
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      img{
+        width: 100px;
+        height: 70px;
+        object-fit: cover;
+      }
+
+      p{
+        font-size: 12px;
+        line-height: 2;
+        color: $main-color;
+        text-decoration: underline;
+        width: 152px;
+      }
+    }
+  }
+
+  .category-list{
+    margin-top: 50px;
+
+    .category-list-text{
+      width: 270px;
+      height: 63px;
+      background-color: $main-color;
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.1rem;
+      font-weight: bold;
+    }
+
+    ul{
+      margin-top: 30px;
+
+      li{
+        font-size: 1.6rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+
+        &::before{
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 100%;
+          background-color: $main-color;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+//-----ブログ詳細ページ//@at-root
+
+//-----詳細ページ共通部
+.detail-list {
+  margin-top: 36px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: $main-color;
+
+  li {
+    margin-top: 5px;
+    width: 558px;
+    position: relative;
+    margin-left: 32px;
+
+    &::before {
+      position: absolute;
+      left: -5%;
+      display: inline-block;
+      content: "";
+      background-color: $btn-color;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+    }
+
+    &:nth-child(1)::before,
+    &:nth-child(2)::before {
+      top: 25%;
+    }
+
+    &:nth-child(3)::before {
+      top: 15%;
+    }
+  }
+
+
+}
+
+.detail-link {
+  font-size: 1.6rem;
+  color: $btn-color;
+  margin-top: 50px;
+  text-decoration: underline;
+}
+//-----詳細ページ共通部//@at-root

@@ -58,26 +58,35 @@
         <h1 class="site-ttl">
           <a href="/index.html"><img src="./asset/logo (2)@2x.png" alt="サイトロゴ"></a>
         </h1><!-- /.site-ttl -->
-        <nav class="header-nav">
-          <ul class="nav-list">
-            <li class="nav-item-mb"><a href="/index.html">ホーム</a></li>
-            <li class="nav-item"><a href="/news.html">お知らせ</a></li>
-            <li class="nav-item"><a href="/blog.html">ブログ</a></li>
-            <li class="nav-item"><a href="/price-list.html">コース・料金</a></li>
-          </ul><!-- /.nav-list -->
-          <ul class="nav-list-r">
-            <li class="nav-item">
-              <p>平日08:00〜20:00</p>
-              <p><i class="fas fa-phone-alt"></i>0123-456-7890</p>
-            </li>
-            <li class="nav-item">
-              <a href="/contact.html">資料請求</a>
-            </li>
-            <li class="nav-item contact">
-              <a href="/contact.html">お問い合わせ</a>
-            </li>
-          </ul><!-- /.nav-list-r -->
-        </nav><!-- /.header-nav -->
+        <div class="nav-wrapper">
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="nav-item-mb"><a href="/index.html">ホーム</a></li>
+              <li class="nav-item"><a href="/news.html">お知らせ</a></li>
+              <li class="nav-item"><a href="/blog.html">ブログ</a></li>
+              <li class="nav-item"><a href="/price-list.html">コース・料金</a></li>
+            </ul><!-- /.nav-list -->
+            <ul class="nav-list-r">
+              <li class="nav-item">
+                <p>平日08:00〜20:00</p>
+                <p><i class="fas fa-phone-alt"></i>0123-456-7890</p>
+              </li>
+              <li class="nav-item">
+                <a href="/contact.html">資料請求</a>
+              </li>
+              <li class="nav-item contact">
+                <a href="/contact.html">お問い合わせ</a>
+              </li>
+            </ul><!-- /.nav-list-r -->
+          </nav><!-- /.header-nav -->
+        </div>
+        <div class="burger-btn"><!-- ③ハンバーガーボタン -->
+          <span class="bars">
+            <span class="bar bar_top"></span>
+            <span class="bar bar_mid"></span>
+            <span class="bar bar_bottom"></span>
+          </span>
+        </div>
       </div><!-- /.header-inner -->
     </header>
     <!-- //header -->
@@ -310,23 +319,32 @@
               <h2 class="section-ttl">ブログ</h2><!-- /.section-ttl -->
               <div class="blog-item">
                 <div class="blog-item-img">
+                  <div class="blog-category">
+                    <p>カテゴリー</p>
+                  </div><!-- /.blog-category -->
                   <img src="./asset/sample01@2x.png" alt="サンプル１">
                   <div class="blog-item-content">
-                    <p class="blog-item-text ">Engress説明会in大阪の模様をお伝えします</p><!-- /.blog-item-text -->
+                    <a href="/blog-detail.html" class="blog-item-text ">Engress説明会in大阪の模様をお伝えします</a><!-- /.blog-item-text -->
                     <p class="blog-item-date">2020-12-27</p><!-- /.blog-item-date -->
                   </div><!-- /.blog-item-content -->
                 </div><!-- /.blog-item-img -->
                 <div class="blog-item-img">
+                  <div class="blog-category">
+                    <p>カテゴリー</p>
+                  </div><!-- /.blog-category -->
                   <img src="./asset/sample02@2x.png" alt="サンプル２">
                   <div class="blog-item-content">
-                    <p class="blog-item-text">Engressもくもく会でみんなで　TOEFL学習をしませんか？</p><!-- /.blog-item-text -->
+                    <a href="/blog-detail.html" class="blog-item-text">Engressもくもく会でみんなで　TOEFL学習をしませんか？</a><!-- /.blog-item-text -->
                     <p class="blog-item-date">2020-12-01</p><!-- /.blog-item-date -->
                   </div><!-- /.blog-item-content -->
                 </div><!-- /.blog-item-img -->
                 <div class="blog-item-img">
+                  <div class="blog-category">
+                    <p>カテゴリー</p>
+                  </div><!-- /.blog-category -->
                   <img src="./asset/sample03@2x.png" alt="サンプル３">
                   <div class="blog-item-content">
-                    <p class="blog-item-text">TOEFL学習にはコーチング学習が最強である話</p><!-- /.blog-item-text -->
+                    <a href="/blog-detail.html" class="blog-item-text">TOEFL学習にはコーチング学習が最強である話</a><!-- /.blog-item-text -->
                     <p class="blog-item-date">2020-11–20</p><!-- /.blog-item-date -->
                   </div><!-- /.blog-item-content -->
                 </div><!-- /.blog-item-img -->
@@ -345,7 +363,7 @@
                     2020-12-01
                   </p><!-- /.news-item-date -->
                   <p class="news-item-text">
-                    2021年のスケジュールについて
+                    <a href="/news-detail.html">2021年のスケジュールについて</a>
                   </p><!-- /.news-item-text -->
                 </div><!-- /.news-item-inner -->
                 <div class="news-item-inner">
@@ -353,7 +371,7 @@
                     2019-11-02
                   </p><!-- /.news-item-date -->
                   <p class="news-item-text">
-                    11月休校日のお知らせ
+                    <a href="/news-detail.html">11月休校日のお知らせ</a>
                   </p><!-- /.news-item-text -->
                 </div><!-- /.news-item-inner -->
                 <div class="news-item-inner">
@@ -361,7 +379,7 @@
                     2019-11-01
                   </p><!-- /.news-item-date -->
                   <p class="news-item-text">
-                    10月休校日のお知らせ
+                    <a href="/news-detail.html">10月休校日のお知らせ</a>
                   </p><!-- /.news-item-text -->
                 </div><!-- /.news-item-inner -->
               </div><!-- /.news-item -->
@@ -395,27 +413,31 @@
 
     <!-- footer -->
     <footer id="footer">
-      <div class="footer-inner">
-        <div class="footer-list">
-          <ul class="footer-list-item">
-            <li class="list-text"><a href="/index.html">ホーム</a></li><!-- /.list-text -->
-            <li class="list-text"><a href="/news.html">お知らせ</a></li><!-- /.list-text -->
-            <li class="list-text"><a href="/blog.html">ブログ</a></li><!-- /.list-text -->
-            <li class="list-text"><a href="/price-list.html">コース・料金</a></li><!-- /.list-text -->
-          </ul><!-- /.footer-list-item -->
-        </div><!-- /.footer-list -->
-        <div class="footer-content">
-          <div class="footer-img">
-            <img src="./asset/logo (2)@2x.png" alt="フッターロゴ">
-          </div><!-- /.footer-img -->
-          <div class="footer-content-inner">
-            <p><i class="fas fa-phone-alt"></i>0123-456-7890</p>
-            <p>平日08:00~20:00</p>
-          </div><!-- /.footer-content-inner -->
-        </div><!-- /.footer-content -->
-      </div><!-- /.footer-inner -->
+      <div class="section-wrapper">
+        <div class="footer-inner">
+          <div class="footer-list">
+            <ul class="footer-list-item">
+              <li class="list-text"><a href="/index.html">ホーム</a></li><!-- /.list-text -->
+              <li class="list-text"><a href="/news.html">お知らせ</a></li><!-- /.list-text -->
+              <li class="list-text"><a href="/blog.html">ブログ</a></li><!-- /.list-text -->
+              <li class="list-text"><a href="/price-list.html">コース・料金</a></li><!-- /.list-text -->
+            </ul><!-- /.footer-list-item -->
+          </div><!-- /.footer-list -->
+          <div class="footer-content">
+            <div class="footer-img">
+              <img src="./asset/logo (2)@2x.png" alt="フッターロゴ">
+            </div><!-- /.footer-img -->
+            <div class="footer-content-inner">
+              <p><i class="fas fa-phone-alt"></i>0123-456-7890</p>
+              <p>平日08:00~20:00</p>
+            </div><!-- /.footer-content-inner -->
+          </div><!-- /.footer-content -->
+        </div><!-- /.footer-inner -->
+      </div><!-- /.section-wrapper -->
       <div class="footer-copylight">
-        <p>© 2020 Engress.</p>
+        <div class="section-wrapper">
+          <p>© 2020 Engress.</p>
+        </div><!-- /.section-wrapper -->
       </div><!-- /.footer-copylight -->
     </footer>
     <!-- //footer -->

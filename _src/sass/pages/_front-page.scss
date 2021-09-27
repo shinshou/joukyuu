@@ -7,7 +7,7 @@
     justify-content: center;
     background-image: url(/asset/fv@2x.png);
     background-size: cover;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     padding-top:196px;
     padding-bottom: 86px;
@@ -36,11 +36,11 @@
   //-----section-onayami
   #section-onayami{
     background-color: $main-color;
-    color:#FFF;
     padding-top: 63px;
     padding-bottom: 54px;
 
     .section-ttl{
+      color:#FFF;
       text-align: center;
     }
 
@@ -48,6 +48,7 @@
       margin-top: 65px;
 
       .onayami-list{
+        color:#FFF;
         display: flex;
         justify-content: space-around;
         width: 555px;
@@ -64,7 +65,6 @@
 
       .onayami-subttl{
         background-color: #FFF;
-        width: 900px;
         height: 248px;
         display:flex;
         align-items: center;
@@ -74,7 +74,9 @@
         .onayami-subttl-inner{
           padding-top: 20px;
           padding-bottom: 20px;
-          width: 868px;
+          margin-right: 15px;
+          margin-left: 15px;
+          width: 100%;
           height: 225px;
           border:5px solid $main-color;
         }
@@ -128,6 +130,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include tablet{
+              margin: 10px;
+              margin-top: 0;
+            }
           }
 
           .feature-text-ttl{
@@ -135,6 +142,10 @@
             line-height: 1.5;
             font-weight: bold;
             margin-top: 35px;
+
+            @include tablet{
+              margin: 10px;
+            }
           }
 
           .feature-text-content{
@@ -143,6 +154,12 @@
             margin-top: 39px;
             width: 500px;
             height: 70px;
+
+            @include tablet{
+              width: 350px;
+              margin: 10px;
+              height:auto;
+            }
           }
       }
       
@@ -159,7 +176,6 @@
     .section-inner-price{
       padding-top: 61px;
       padding-bottom: 53px;
-      width: 906px;
       height: 217px;
       background-image: url(/asset/price@2x.png);
       background-size: cover;
@@ -191,6 +207,7 @@
     .section-inner-jirei{
 
       .section-ttl{
+        color:#FFF;
         text-align: center;
       }
 
@@ -201,6 +218,10 @@
         .jirei-item{
           margin-top: 137px;
           width: 280px;
+
+          @include tablet{
+            width: 200px;
+          }
 
           .jirei-text{
             font-size: 1.6rem;
@@ -227,6 +248,11 @@
             display: flex;
             align-items: center;
             padding-left: 10px;
+
+            @include tablet{
+              width: 100%;
+              margin-bottom: 5px;
+            }
           }
 
           .jirei-genre2{
@@ -238,6 +264,11 @@
             display: flex;
             align-items: center;
             padding-left: 10px;
+
+            @include tablet{
+              width: 100%;
+              margin-bottom: 5px;
+            }
           }
 
           .jirei-genre3{
@@ -249,6 +280,10 @@
             display: flex;
             align-items: center;
             padding-left: 10px;
+
+            @include tablet{
+              width: 100%;
+            }
           }
         }
       }      
@@ -269,7 +304,7 @@
       }
 
       .flow-table{
-        
+
         .table-row{
           margin-bottom: 8px;
           display: flex;
@@ -314,10 +349,13 @@
             background-color: $table-color;
             color:$main-color;
             font-size: 1.6rem;
-            font-weight: bold;
             display: flex;
             align-items: center;
             padding-left: 53.5px;
+
+            @include tablet{
+              width: 70%;
+            }
           }
         }
       }
@@ -405,6 +443,19 @@
       .blog-item-img{
         display: flex;
         margin-bottom: 31px;
+        position: relative;
+
+        .blog-category{
+          position: absolute;
+          width: 78px;
+          height: 23px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $main-color;
+          color: #fff;
+          font-size: 12px;
+        }
 
         img{
           width: 150px;
@@ -457,6 +508,7 @@
           font-size: 1.6rem;
           margin-top: 16px;
           line-height: 1.7;
+          text-decoration: underline;
         }
       }
     }
@@ -490,6 +542,10 @@
         color: $main-color;
         height: 80px;
         padding-right: 100px;
+
+        @include tablet{
+          padding: 0;
+        }
 
         .inner-content{
           display: flex;
@@ -536,7 +592,6 @@
     .footer-list-item{
       display: flex;
       font-size: 1.6rem;
-      margin-left: 180px;
       margin-top: 50px;
       margin-bottom: 160px;
 
@@ -559,7 +614,6 @@
     }
 
     .footer-content{
-      margin-right: 172px;
       margin-top: 35px;
 
       .footer-img{
@@ -602,13 +656,16 @@
 
   .footer-copylight{
     height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 12px;
-    font-weight: bold;
     background-color: #FFF;
-    padding-right: 172px;
+
+    p{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 12px;
+      font-weight: bold;
+      height: 35px;
+    }
   }
 }
  //-----footer//@at-root

@@ -1,7 +1,9 @@
 @import "setting/config";
+@import "mixin/responsive";
 @import "base/common";
 @import "module/bread-list";
 @import "module/linkbtn";
 @import "module/navbar";
 @import "pages/front-page";
 @import "pages/ul-page";
+@import "pages/detail-page";

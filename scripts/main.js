@@ -146,11 +146,10 @@ $(function () {
         $('.nav-wrapper').removeClass('nav-fadein');//.nav-wrapperからnav-fadeinクラスを削除(メニューのフェードイン)
     });
 
-        $('a').on('click',function(){//.nav-itemをクリックすると
+    $('a').on('click',function(){//.nav-itemをクリックすると
         $('.burger-btn').removeClass('close');//.burger-btnにcloseクラスを削除(ボタンのアニメーション)
         $('.nav-wrapper').removeClass('nav-fadein');//.nav-wrapperからnav-fadeinクラスを削除(メニューのフェードイン)
     });
-
 });
 
 //アコーディオンメニュー作成
