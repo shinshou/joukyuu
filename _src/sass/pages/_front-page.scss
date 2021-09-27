@@ -18,6 +18,18 @@
         font-size: 4.8rem;
         font-weight: bold;
         color: #FFF;
+
+        @include mobile{
+          text-align: center;
+        }
+
+        br{
+          display:none;
+
+          @include mobile{
+            display:block;
+          }
+        }
       }
     
 
@@ -55,11 +67,23 @@
         margin-right: auto;
         margin-left: auto;
 
+        @include mobile{
+          display: block;
+          width: 100%;
+        }
+
         .onayami-item{
           text-align: center;
           line-height: 2.1;
           font-size: 1.8rem;
           font-weight: bold;
+        }
+
+        br{
+
+          @include mobile{
+            display: none;
+          }
         }
       }
 
@@ -88,6 +112,10 @@
           line-height: 1.3;
           font-weight: bold;
 
+          @include mobile{
+            font-size: 2.2rem;
+          }
+
           span {
             background: linear-gradient(transparent 65%, $btn-color 20%);
           }
@@ -99,6 +127,17 @@
           font-size: 1.8rem;
           margin-top: 25px;
           line-height: 1.7;
+
+          @include mobile{
+            font-size: 1.6rem;
+          }
+
+          br{
+
+            @include mobile{
+              display: none;
+            }
+          }
         }
 
       }
@@ -120,6 +159,11 @@
           display: flex;
           justify-content: space-between;
           margin-top: 59px;
+
+          @include mobile{
+            display: block;
+          }
+
           .feature-text-no{
             font-size: 12px;
             line-height: 1.6;
@@ -155,10 +199,23 @@
             width: 500px;
             height: 70px;
 
+            @include mobile{
+              width: 100%;
+              margin: 0;
+              margin-bottom: 10px;
+            }
+
             @include tablet{
               width: 350px;
               margin: 10px;
               height:auto;
+            }
+          }
+
+          img{
+
+            @include mobile{
+              width: 100%;
             }
           }
       }
@@ -215,9 +272,18 @@
         display: flex;
         justify-content: space-between;
 
+        @include mobile{
+          display: block;
+        }
+
         .jirei-item{
           margin-top: 137px;
           width: 280px;
+
+          @include mobile{
+            margin-top: 50px;
+            width: 100%;
+          }
 
           @include tablet{
             width: 200px;
@@ -319,6 +385,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include mobile{
+              font-size: 1.4rem;
+            }
           }
 
           .table-item-ttl{
@@ -333,6 +403,13 @@
             padding-left: 21px;
             position: relative;
 
+            @include mobile {
+              font-size: 1.4rem;
+              padding-left: 10px;
+              padding-right: 10px;
+              width: 154.5px;
+            }
+
             &::after{
               position: absolute;
               left:100%;
@@ -340,6 +417,14 @@
               width: 2px;
               height: 29px;
               background-color: #C3C3C3;
+            }
+
+            br{
+              display: none;
+
+              @include mobile{
+                display: block;
+              }
             }
           }
 
@@ -352,6 +437,12 @@
             display: flex;
             align-items: center;
             padding-left: 53.5px;
+
+            @include mobile{
+              font-size: 1.2rem;
+              padding-left: 10px;
+              padding-right: 10px;
+            }
 
             @include tablet{
               width: 70%;
@@ -386,6 +477,10 @@
           position: relative;
           cursor: pointer;
 
+          @include mobile{
+            padding-right: 50px;
+          }
+
           &::before,&::after{
             position: absolute;
             content:"";
@@ -415,6 +510,10 @@
           align-items:center;
           padding-left: 25.5px;
           margin-bottom: 16px;
+
+          @include mobile {
+            padding-left: 10px;
+          }
         }
 
         &:last-child{
@@ -430,6 +529,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 90px;
+
+    @include mobile{
+      width: 100%;
+      display: block;
+    }
   }
   //-----section-2col//@at-root
 
@@ -437,13 +541,23 @@
   #section-blog{
     width: 45%;
 
+    @include mobile{
+      width: 100%;
+    }
+
     .blog-item{
       margin-top: 30px;
+      width: 100%;
+
+      @include mobile{
+        margin-top: 50px;
+      }
 
       .blog-item-img{
         display: flex;
         margin-bottom: 31px;
         position: relative;
+        width: 100%;
 
         .blog-category{
           position: absolute;
@@ -461,6 +575,10 @@
           width: 150px;
           height: 110px;
           object-fit: cover;
+
+          @include mobile{
+            width: 130px;
+          }
         }
 
         .blog-item-content{
@@ -468,6 +586,7 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          width: 100%;
 
           .blog-item-text{
             font-size: 1.6rem;
@@ -475,6 +594,18 @@
             line-height: 1.6;
             text-decoration: underline;
             color: $main-color;
+            width: 260px;
+            white-space: wrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            @include mobile{
+              width: 140px;
+            }
+
+            @include tablet{
+              width: 200px;
+            }
           }
 
           .blog-item-date{
@@ -492,23 +623,33 @@
   #section-news{
     width: 45%;
 
+    @include mobile{
+      width: 100%;
+      margin-top: 50px;
+    }
+
     .news-item{
       margin-top: 30px;
 
       .news-item-inner{
-        width: 402px;
+        width: 100%;
         height: 87px;
 
         .news-item-date{
           font-size: 12px;
           line-height: 1.6;
+          width: 100%;
         }
 
         .news-item-text{
           font-size: 1.6rem;
-          margin-top: 16px;
           line-height: 1.7;
           text-decoration: underline;
+          display: inline-block;
+          width: 100%;
+          white-space: wrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
     }
@@ -518,6 +659,10 @@
   //-----section-contact
   #section-contact{
     margin-top: 119px;
+
+    @include mobile{
+      margin-top: 80px;
+    }
 
     .section-inner-contact{
 
@@ -532,6 +677,7 @@
         .section-ttl{
           color: #fff;
           text-align: center;
+          line-height: 1.7;
         }
       }
 
@@ -543,6 +689,10 @@
         height: 80px;
         padding-right: 100px;
 
+        @include mobile{
+          height: auto;
+        }
+
         @include tablet{
           padding: 0;
         }
@@ -550,12 +700,23 @@
         .inner-content{
           display: flex;
           align-items: flex-end;
+
+          @include mobile{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+          }
         
           .contact-tel-text{
             font-size: 1.6rem;
             font-weight: bold;
             line-height: 1.7;
             width: 240px;
+
+            @include mobile{
+              text-align: center;
+              width: 100%;
+            }
           }
 
           .contact-tel-num{
@@ -565,12 +726,25 @@
             width: 268px;
             margin-right: 20px;
             margin-left: 20px;
+
+            @include mobile{
+              margin: 0;
+            }
+
+            @include mobile{
+              width: 100%;
+            }
           }
 
           .contact-tel-date{
             font-size: 1.6rem;
             line-height: 1.7;
             width: 132px;
+
+            @include mobile{
+              width: 100%;
+              text-align: center;
+            }
           }
         }
       }
@@ -595,6 +769,12 @@
       margin-top: 50px;
       margin-bottom: 160px;
 
+      @include mobile{
+        font-size: 1.4rem;
+        display: block;
+        margin-bottom: 40px;
+      }
+
       .list-text{
         width: 111px;
         height: 23px;
@@ -602,13 +782,40 @@
         justify-content: center;
         align-items: center;
 
+        @include mobile{
+          margin-top: 3px;
+        }
+
+        &:nth-child(1) {
+
+          @include mobile {
+            border-left: 1px solid #FFF;
+          }
+        }
+
         &:nth-child(2) {
           border-left: 1px solid #FFF;
           border-right: 1px solid #FFF;
+
+          @include mobile{
+            border-right:none;
+          }
         }
 
         &:nth-child(3) {
           border-right: 1px solid #FFF;
+
+          @include mobile {
+            border-right: none;
+            border-left: 1px solid #FFF;
+          }
+        }
+
+        &:nth-child(4) {
+
+          @include mobile {
+            border-left: 1px solid #FFF;
+          }
         }
       }
     }
@@ -624,9 +831,19 @@
         align-items: center;
         justify-content: center;
 
+        @include mobile{
+          width: 167px;
+        }
+
         img{
           width: 159px;
           height: 31px;
+          object-fit: cover;
+
+          @include tablet{
+            height: auto;
+            width: 100%;
+          }
         }
       }
 

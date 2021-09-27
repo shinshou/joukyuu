@@ -20,6 +20,7 @@
       height: 27px;
       display: flex;
       align-items: flex-end;
+      z-index: 10;
     }
 
     h1>img{
@@ -32,12 +33,11 @@
       @include tablet {
         /*---- フェードインの場合は有効に ----*/
         /* opacity: 0; */
-        width: 100vw;
+        width: 40vw;
         height: 100vh;
         position: fixed;
-        top: 0;
-        right: -120%;
-        z-index: 9999;
+        top:0;
+        right:-120%;
         background-color: #FFF;
 
         /*---- フェードインの場合は無効に ----*/
@@ -49,6 +49,12 @@
         display: flex;
         justify-content: space-between;
 
+        @include tablet{
+          display: block;
+          margin-top: 80px;
+          overflow: hidden;
+        }
+
         .nav-list{
           display: flex;
           align-items: center;
@@ -59,13 +65,27 @@
 
           li{
             margin-right: 28px;
+
+            @include tablet{
+              margin-left: 20px;
+              position: relative;
+              left:-120%;
+            }
           }
 
           li>a{
             line-height: 1.8;
-            font-size: 16px;
+            font-size: 1.6rem;
             color:$font-color1;
             font-weight: bold;
+
+            @include mobile{
+              font-size: 1.6rem;
+            }
+
+            @include tablet{
+              font-size: 2.8rem;
+            }
           }
         }
 
@@ -73,18 +93,45 @@
           display: flex;
           align-items: center;
 
+          @include mobile{
+            justify-content: center;
+          }
+
           @include tablet{
-            display: block;
+            width: 100%;
+            flex-direction: column;
+            position: relative;
+            left:-120%;
+            margin-top: 40px;
           }
 
           li:nth-child(1){  
             text-align: right;
             margin-right: 23px;
 
+            @include mobile{
+              display: block;
+              text-align: center;
+            }
+
+            @include tablet{
+              order: 2;
+              margin-top: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              margin-right: 0;
+              width: 100%;
+            }
+
             p:nth-of-type(1){
               font-size: 12px;
               line-height: 1.2;
               margin-bottom: 10px;
+
+              @include tablet{
+                margin-bottom: 0;
+              }
             }
             
             p:nth-of-type(2){
@@ -101,15 +148,26 @@
           li:nth-child(2),
           li:nth-child(3){
             border-radius: 5px;
+
+            @include tablet{
+              width: 80%;
+              margin-top: 20px;
+            }
           }
 
           li:nth-child(2){
             background-color:$btn-color;
             margin-right: 10px;
+
+            @include tablet{
+              margin-right: 0;
+              order: 0;
+            }
           }
 
           li:nth-child(3){
             background-color: $main-color;
+            order: 1;
           }
 
           li>a{
@@ -119,10 +177,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 14px;
+            font-size: 1.4rem;
             line-height: 1.7;
             color: #FFF;
             font-weight: bold;
+
+            @include  tablet{
+              width: auto;
+            }
           }
         }
       }
@@ -133,6 +195,32 @@
       @include tablet{
         right: 0;
       }
+    }
+
+    .text-slidein{
+      animation:slideIn 1s ease forwards;
+    }
+    @keyframes slideIn {
+
+      100% {
+        left:0%;
+      }
+    }
+
+    .nav-item1{
+      animation-delay: 0.3s;
+    }
+    .nav-item2 {
+      animation-delay: 0.6s;
+    }
+    .nav-item3 {
+      animation-delay: 0.9s;
+    }
+    .nav-item4 {
+      animation-delay: 1.2s;
+    }
+    .nav-list-r{
+      animation-delay: 1.5s;
     }
   }
 

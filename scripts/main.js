@@ -136,9 +136,11 @@ $(function () {
     });
 
     //ハンバーガメニュー
-    $('.burger-btn').on('click',function(){//.burger-btnをクリックすると
+    $('.burger-btn').on('click', function () {//.burger-btnをクリックすると
         $('.burger-btn').toggleClass('close');//.burger-btnにcloseクラスを付与(ボタンのアニメーション)
-        $('.nav-wrapper').toggleClass('nav-fadein');//.nav-wrapperが0.5秒でフェードイン(メニューのフェードイン)
+        $('.nav-wrapper').toggleClass('nav-fadein');
+        $('.nav-item1,.nav-item2,.nav-item3,.nav-item4,.nav-list-r').toggleClass('text-slidein');
+        //.nav-wrapperが0.5秒でフェードイン(メニューのフェードイン)
     });
 
     $('.nav-item').on('click',function(){//.nav-itemをクリックすると
@@ -178,6 +180,7 @@ $(document).ready(function () {
         $(this).toggleClass("active");
     });
 });
+
 
 
 
