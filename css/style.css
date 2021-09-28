@@ -1059,16 +1059,24 @@ section.anchor {
 }
 
 #section-ul .section-inner-ul-blog .blog-inner .blog-content .blog-ttl {
+  width: 610px;
   margin-top: 20px;
+  overflow: hidden;
   font-weight: bold;
   font-size: 2.6rem;
   text-decoration: underline;
+  text-overflow: ellipsis;
+  white-space: wrap;
 }
 
 #section-ul .section-inner-ul-blog .blog-inner .blog-content .blog-text {
+  width: 610px;
   margin-top: 20px;
+  overflow: hidden;
   font-size: 1.6rem;
   line-height: 1.5;
+  text-overflow: ellipsis;
+  white-space: wrap;
 }
 
 #section-ul .section-inner-ul-news {
@@ -1286,6 +1294,10 @@ section.anchor {
   text-align: center;
 }
 
+#section-ul-content .section-inner-ul-pricelist .price-list-content .price-list-inner ul {
+  width: 220px;
+}
+
 #section-ul-content .section-inner-ul-pricelist .price-list-content .price-list-inner ul li {
   position: relative;
   width: 146px;
@@ -1294,6 +1306,7 @@ section.anchor {
   margin-left: auto;
   color: #1b224c;
   font-size: 1.6rem;
+  line-height: 1.7;
   text-align: center;
 }
 
@@ -1865,6 +1878,24 @@ section.anchor {
     width: 100%;
     height: auto;
   }
+  #section-ul .section-inner-ul-blog .blog-inner .blog-content .blog-ttl {
+    width: 450px;
+  }
+  #section-ul .section-inner-ul-blog .blog-inner .blog-content .blog-text {
+    width: 450px;
+  }
+  #section-ul .section-inner-ul-news .news-inner .news-content .news-date {
+    font-size: 1.4rem;
+  }
+  #section-ul-content .section-inner-ul-pricelist {
+    overflow-x: scroll;
+  }
+  #section-ul-content .section-inner-ul-pricelist .price-list-content {
+    margin-right: 10px;
+  }
+  #section-ul-content .section-inner-ul-pricelist .price-list-content .price-list-inner .price {
+    width: 220px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2009,6 +2040,28 @@ section.anchor {
   }
   #footer .footer-inner .footer-content .footer-img {
     width: 167px;
+  }
+  #section-ul .section-inner-ul-blog .blog-inner {
+    display: block;
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #section-ul .section-inner-ul-blog .blog-inner .blog-img img {
+    width: 280px;
+    height: 178px;
+  }
+  #section-ul .section-inner-ul-blog .blog-inner .blog-content {
+    width: 280px;
+    margin-right: auto;
+    margin-left: 0;
+    margin-left: auto;
+  }
+  #section-ul .section-inner-ul-blog .blog-inner .blog-content .blog-ttl {
+    width: 100%;
+  }
+  #section-ul .section-inner-ul-blog .blog-inner .blog-content .blog-text {
+    width: 100%;
   }
 }
 
