@@ -963,6 +963,10 @@ section.anchor {
   background-image: url(/asset/cta@2x.png);
 }
 
+.ul-contact .kv-ul-copy br {
+  display: none;
+}
+
 #section-ul {
   margin-top: 60px;
 }
@@ -1225,9 +1229,11 @@ section.anchor {
   display: flex;
   justify-content: space-between;
   margin-top: 106px;
+  padding-top: 20px;
 }
 
 #section-ul-content .section-inner-ul-pricelist .price-list-content {
+  z-index: 10;
   width: 220px;
   height: 470px;
   border: 1px solid #1b224c;
@@ -1299,42 +1305,32 @@ section.anchor {
 }
 
 #section-ul-content .section-inner-ul-pricelist .price-list-content .price-list-inner ul li {
-  position: relative;
-  width: 146px;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 23px;
-  margin-left: auto;
   color: #1b224c;
   font-size: 1.6rem;
   line-height: 1.7;
   text-align: center;
 }
 
-#section-ul-content .section-inner-ul-pricelist .price-list-content .price-list-inner ul li::before, #section-ul-content .section-inner-ul-pricelist .price-list-content .price-list-inner ul li::after {
-  display: block;
-  position: absolute;
-  background-color: #1b224c;
-  content: "";
+#section-ul-content .section-inner-ul-pricelist .price-list-content .price-list-inner ul li img {
+  width: 15px;
+  height: 15px;
+  margin-right: 11.5px;
 }
 
-#section-ul-content .section-inner-ul-pricelist .price-list-content .price-list-inner ul li::before {
-  top: 30%;
-  left: -8%;
-  width: 3px;
-  height: 8px;
-  transform: rotate(-45deg);
+#section-ul-content .section-inner-ul-pricelist .price-list-content .price-list-inner ul li:nth-child(4) {
+  align-items: flex-start;
+  width: 170.5px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-#section-ul-content .section-inner-ul-pricelist .price-list-content .price-list-inner ul li::after {
-  top: 20%;
-  left: -5%;
-  width: 3px;
-  height: 10px;
-  transform: rotate(45deg);
-}
-
-#section-ul-content .section-inner-ul-pricelist .price-list-content .price-list-inner ul li:nth-child(4)::before {
-  top: 25%;
+#section-ul-content .section-inner-ul-pricelist .price-list-content .price-list-inner ul li:nth-child(4) img {
+  margin-top: 5px;
+  margin-right: 10px;
 }
 
 #section-detail-news .section-detail-news-ttl {
@@ -1909,6 +1905,9 @@ section.anchor {
     display: block;
     text-align: center;
   }
+  #main .kv-wrapper {
+    background-image: url(/asset/fv.png);
+  }
   #main .kv-wrapper .kv-content .kv-copy {
     text-align: center;
   }
@@ -2041,6 +2040,20 @@ section.anchor {
   #footer .footer-inner .footer-content .footer-img {
     width: 167px;
   }
+  .ul-contact .kv-ul-copy br {
+    display: block;
+  }
+  #section-ul .section-inner-ul-price {
+    display: block;
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #section-ul .section-inner-ul-price .plus-label {
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   #section-ul .section-inner-ul-blog .blog-inner {
     display: block;
     width: 280px;
@@ -2062,6 +2075,9 @@ section.anchor {
   }
   #section-ul .section-inner-ul-blog .blog-inner .blog-content .blog-text {
     width: 100%;
+  }
+  #section-ul .section-inner-ul-contact .contact-inner .privacy-policy {
+    font-size: 1.2rem;
   }
 }
 

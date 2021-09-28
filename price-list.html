@@ -44,10 +44,20 @@
 
     <!-- Aos.js読み込み -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- スクロールヒント読み込み-->
+    <link rel="stylesheet" href="https://unpkg.com/scroll-hint@1.1.10/css/scroll-hint.css">
+    <script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js"></script>
     
     <!-- css読み込み -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script>
+      window.addEventListener('DOMContentLoaded', function(){
+        new ScrollHint('.js-scrollable');
+      });
+    </script>
 
   </head>
 
@@ -148,8 +158,8 @@
       <setion id="section-ul-content">
         <div class="section-wrapper section-pricelist-wrapper">
           <h2 class="section-ttl">料金表</h2><!-- /.section-ttl -->
-          <div class="section-inner section-inner-ul-pricelist">
-            <div class="price-list-content">
+          <div class="section-inner section-inner-ul-pricelist js-scrollable">
+            <div class="price-list-content" ontouchstart="">
               <div class="price-list-ttl">
                 <p>基礎プラン</p>
               </div><!-- /.price-list-ttl -->
@@ -157,13 +167,13 @@
                 <p class="price">59,000円~</p><!-- /.price -->
                 <p class="price-sub">*月額（税抜価格）</p><!-- /.price-sub -->
                 <ul>
-                  <li>カリキュラム作成</li>
-                  <li>TOEFL学習サポート</li>
-                  <li>週一回のビデオMTG</li>
+                  <li><img src="./asset/check.png" alt="check">カリキュラム作成</li>
+                  <li><img src="./asset/check.png" alt="check">TOEFL学習サポート</li>
+                  <li><img src="./asset/check.png" alt="check">週一回のビデオMTG</li>
                 </ul>
               </div><!-- /.price-list-inner -->
             </div><!-- /.price-list-content -->
-            <div class="price-list-content">
+            <div class="price-list-content" ontouchstart="">
               <div class="price-list-ttl">
                 <p>演習プラン</p>
               </div><!-- /.price-list-ttl -->
@@ -171,14 +181,14 @@
                 <p class="price">75,000円~</p><!-- /.price -->
                 <p class="price-sub">*月額（税抜価格）</p><!-- /.price-sub -->
                 <ul>
-                  <li>カリキュラム作成</li>
-                  <li>TOEFL学習サポート</li>
-                  <li>週一回のビデオMTG</li>
-                  <li>月二回の模試（解説 付き）</li>
+                  <li><img src="./asset/check.png" alt="check">カリキュラム作成</li>
+                  <li><img src="./asset/check.png" alt="check">TOEFL学習サポート</li>
+                  <li><img src="./asset/check.png" alt="check">週一回のビデオMTG</li>
+                  <li><img src="./asset/check.png" alt="check">月二回の模試（解説 付き）</li>
                 </ul>
               </div><!-- /.price-list-inner -->
             </div><!-- /.price-list-content -->
-            <div class="price-list-content">
+            <div class="price-list-content" ontouchstart="">
               <div class="price-list-ttl">
                 <p>おすすめ<br>志望校対策プラン</p>
               </div><!-- /.price-list-ttl -->
@@ -186,15 +196,15 @@
                 <p class="price">95,000円~</p><!-- /.price -->
                 <p class="price-sub">*月額（税抜価格）</p><!-- /.price-sub -->
                 <ul>
-                  <li>カリキュラム作成</li>
-                  <li>TOEFL学習サポート</li>
-                  <li>週一回のビデオMTG</li>
-                  <li>月二回の模試（解説 付き）</li>
-                  <li>週一の英語面接対策</li>
+                  <li><img src="./asset/check.png" alt="check">カリキュラム作成</li>
+                  <li><img src="./asset/check.png" alt="check">TOEFL学習サポート</li>
+                  <li><img src="./asset/check.png" alt="check">週一回のビデオMTG</li>
+                  <li><img src="./asset/check.png" alt="check">月二回の模試（解説 付き）</li>
+                  <li><img src="./asset/check.png" alt="check">週一の英語面接対策</li>
                 </ul>
               </div><!-- /.price-list-inner -->
             </div><!-- /.price-list-content -->
-            <div class="price-list-content">
+            <div class="price-list-content" ontouchstart="">
               <div class="price-list-ttl">
                 <p>フレックスプラン</p>
               </div><!-- /.price-list-ttl -->

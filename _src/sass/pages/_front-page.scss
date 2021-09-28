@@ -12,6 +12,10 @@
     padding-top:196px;
     padding-bottom: 86px;
 
+    @include mobile{
+      background-image: url(/asset/fv.png);
+    }
+
     .kv-content{
       
       .kv-copy{

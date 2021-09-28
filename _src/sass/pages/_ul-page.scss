@@ -32,6 +32,17 @@
 
 .ul-contact {
   background-image: url(/asset/cta@2x.png);
+
+  .kv-ul-copy {
+
+    br {
+      display: none;
+
+      @include mobile {
+        display: block;
+      }
+    }
+  }
 }
 //-----key-visual//@at-root
 
@@ -48,6 +59,13 @@
     display: flex;
     justify-content: center;
     margin-top: 60px;
+
+    @include mobile{
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      width: 280px;
+    }
 
     .price-const{
       width: 280px;
@@ -66,6 +84,12 @@
       margin-right: 35px;
       margin-left: 35px;
       position: relative;
+
+      @include mobile{
+        height: 40px;
+        margin-right: auto;
+        margin-left: auto;
+      }
 
       &::before,&::after{
         position: absolute;
@@ -317,6 +341,10 @@
         align-items: center;
         justify-content: center;
 
+        @include mobile{
+          font-size: 1.2rem;
+        }
+
         a{
           color:$btn-color;
           text-decoration: underline;
@@ -355,6 +383,7 @@
     margin-top: 106px;
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
 
     @include tablet{
       overflow-x: scroll;
@@ -365,6 +394,7 @@
       height: 470px;
       border:1px solid $main-color;
       cursor: pointer;
+      z-index: 10;
 
       @include tablet{
         margin-right: 10px;
@@ -437,45 +467,31 @@
           width: 220px;
 
           li{
-            width: 146px;
             margin-bottom: 23px;
-            margin-right: auto;
-            margin-left: auto;
             font-size: 1.6rem;
             color: $main-color;
-            position: relative;
             text-align: center;
             line-height: 1.7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-
-            &::before,&::after{
-              position: absolute;
-              display: block;
-              content:"";
-              background-color: $main-color;
-            }
-
-            &::before{
-              top: 30%;
-              left: -8%;
-              width: 3px;
-              height: 8px;
-              transform: rotate(-45deg);
-            }
-
-            &::after{
-              top: 20%;
-              left: -5%;
-              width: 3px;
-              height: 10px;
-              transform: rotate(45deg);
+            img{
+              width: 15px;
+              height: 15px;
+              margin-right: 11.5px;
             }
           }
 
           li:nth-child(4){
+            align-items: flex-start;
+            width: 170.5px;
+            margin-right: auto;
+            margin-left: auto;
 
-            &::before{
-              top: 25%;
+            img{
+              margin-top: 5px;
+              margin-right:10px;
             }
           }
         }
